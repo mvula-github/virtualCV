@@ -15,14 +15,14 @@ const Navbar = () => {
                 <li><a className='menu-item'>contacts</a> </li>
             </ul>
 
-            <button className='meny-btn' onClick={()=>{}}>
-                <span className={"material-symbol-outlined"} style={{fontSize:"1.5rem"}}>
+            <button className='menu-btn' onClick={()=>{}}>
+                <span className={"material-symbol-outlined"} style={{fontSize:"0.8rem"}}>
                     menu
-                </span>
+               </span>
             </button>
         </div>
     </nav>
   )
 }
 
-export default Navbar
+export default Navbar 

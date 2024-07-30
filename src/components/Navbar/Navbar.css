@@ -87,3 +87,20 @@
     outline: 1.5px solid black;
 }
 */
+.menu-btn{
+    width:3.5rem;
+    height:2rem;
+    font-size: 0.8rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color:black;
+    background:white;
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: none;
+
+}
