@@ -1,3 +1,4 @@
+
 .nav-containter {
     background: rgb(red, green, blue);
     padding: 0.5rem 0;
@@ -6,6 +7,7 @@
     z-index: 30;
     backdrop-filter: blur(50px) ;
 }
+
 
 .nav-content{
     max-width: 1300px;
