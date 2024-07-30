@@ -14,6 +14,12 @@ const Navbar = () => {
                 <li><a className='menu-item'>skills</a> </li>
                 <li><a className='menu-item'>contacts</a> </li>
             </ul>
+
+            <button className='meny-btn' onClick={()=>{}}>
+                <span className={"material-symbol-outlined"} style={{fontSize:"1.5rem"}}>
+                    menu
+                </span>
+            </button>
         </div>
     </nav>
   )
