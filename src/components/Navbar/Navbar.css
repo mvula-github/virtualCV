@@ -43,3 +43,22 @@
     cursor: pointer;
 
 }
+
+.menu-item::before{
+ content: " ";
+ width: 2rem;
+ height:0.2rem;
+ background: white;
+ border-radius: 0.5rem;
+ position:absolute;
+ bottom:-0.6rem;
+ opacity:0;
+ transform: translateX(-1.5rem);
+ transition: all 0.5s ease;
+}
+
+.menu-item:hover::before{
+    width:100%;
+    transform: translateX(0);
+    opacity:1;
+}
