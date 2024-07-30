@@ -1,0 +1,45 @@
+.nav-containter {
+    background: rgb(red, green, blue);
+    padding: 0.5rem 0;
+    position: sticky;
+    top:0;
+    z-index: 30;
+    backdrop-filter: blur(50px) ;
+}
+
+.nav-content{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.logo{
+    width:12rem;
+    height: auto;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-content ul{
+    display:flex;
+    align-items: center;
+    gap:0.5rem;
+    list-style: none;
+}
+
+.nav-content li{
+    margin: 0 1.5rem;
+}
+
+.menu-item{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight:500;
+    color:white;
+    position: relative;
+    cursor: pointer;
+
+}
