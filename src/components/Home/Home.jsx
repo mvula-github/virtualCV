@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
-import "./Home.css"
+import React from 'react';
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -8,7 +8,7 @@ const Home = () => {
 
     {/* The heading or my statement block */}
     <div className='home-content'>
-        <h2>My Adventures in the World of Information and Technology</h2>
+        <h2>Adventures in the World of Information and Technology</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, molestiae dolor! Saepe vero optio aperiam tenetur odit animi ipsum official
         </p>
