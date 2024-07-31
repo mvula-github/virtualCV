@@ -1,3 +1,4 @@
+/*displaying border, and formatting elements*/
 .skills-card{
     border-radius: 0.5rem;
     border: 1.5px solid white;
@@ -10,7 +11,33 @@
     transition: all 0.5s ease;
 }
 
+/*gradient colour look when hovering in block*/
 .skills-card:hover,
 .skills-card.active{
     background: linear-gradient(rgb(114, 114, 114) 0%, rgb(8, 8, 8) 100%);
+}
+
+.skills-card span{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.skills-icon{
+    width:4rem;
+    height:4rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(119, 119, 119) 0%, rgb(8, 8, 8) 100%);
+    border-radius: 0.65rem;
+    border: 1.5px solid white;
+    position:absolute;
+    top: -1rem;
+    left: -1rem;
+}
+
+.skills-icon img{
+    width: 2.4rem;
+    height: auto;
+    object-fit: contain;
 }

@@ -3,18 +3,20 @@
     position: relative;
 }
 
+/* formatting of heading */
 .skills-container h5{
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 3.5rem;
 }
 
+/* formating all skill blocks from top to bottom*/
 .skills-content{
     display:flex;
     align-items: flex-start;
     gap: 3rem;
 }
-
+/* formatting all skill block to be in a 2x2 order */
 .skills{
     flex:1;
     display: grid;
