@@ -4,8 +4,26 @@ import "./Home.css"
 
 const Home = () => {
   return (
-    <div>Home</div>
+   <section className="home-container">
+
+    {/* The heading or my statement block */}
+    <div className='home-content'>
+        <h2>My Adventures in the World of Information and Technology</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, molestiae dolor! Saepe vero optio aperiam tenetur odit animi ipsum officia!
+        </p>
+    </div>
+
+    {/* picture block */}
+    <div className="home-img">
+        <div>
+            <div className = "thisGuy">
+                <img src="" alt="" />
+            </div>
+        </div>
+    </div>
+   </section>
   )
 }
 
-export default Home
+export default Home;
