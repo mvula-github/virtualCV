@@ -17,9 +17,7 @@ const Home = () => {
     {/* picture block */}
     <div className="home-img">
         <div>
-            <div className = "thisGuy">
-                <img src="" alt="" />
-            </div>
+            <img src="../../../public/assets/Me/me1.jpg" alt="" />
         </div>
     </div>
    </section>
