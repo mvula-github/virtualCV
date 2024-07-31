@@ -3,10 +3,12 @@ import React from 'react'
 import "./Navbar.css"
 
 const Navbar = () => {
+
+  
   return (
     <nav className="nav-container">
         <div className='nav-content'>
-            <h3 className='logo'><a>ePortfolio</a></h3>
+            <h3 className='logo'>ePortfolio</h3>
             <ul>
                 <li><a className='menu-item'>home</a> </li>
                 <li><a className='menu-item'>about</a> </li>
