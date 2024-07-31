@@ -6,7 +6,7 @@ import "./SkillCard.css"
 const SkillCard = ({title, iconUrl, isActive, onClick}) => {
   return (
     <div className={`skills-card ${isActive ? "active" :""} `}>
-        <div className='skill-icon'>
+        <div className='skills-icon'>
             <img src={iconUrl} alt={title} />
         </div>
 
