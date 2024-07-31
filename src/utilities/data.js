@@ -5,7 +5,7 @@ export const SKILLS = [
         skills: [
             {skill: "HTML", percentage: "72%" },
             {skill: "css", percentage: "79%" },
-            {skill: "Javascript", percentage: "75%" },
+            {skill: "Javascript", percentage: "77%" },
             {skill: "React.js", percentage: "80%" },
             {skill: "Figma", percentage: "60%" },
         ],
