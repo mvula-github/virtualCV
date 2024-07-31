@@ -4,6 +4,30 @@
     position: relative;
 }
 
+
+/**These are circles used for gradient visual effect*/
+.home-container::after,
+.home-container::before{
+    content: " ";
+    width: 28.125rem;
+    height: 28.125rem;
+    background:grey;
+    border-radius: 28.125rem;
+    position: absolute;
+    z-index: -1;
+    filter: blur(225px);
+}
+/*2nd circle*/
+.home-container::after{
+    top: -3rem;
+    left: -5rem;
+}
+
+.home-container::before{
+    bottom: 2rem;
+    right:0rem;
+}
+
 .home-content{
     flex: 1;
 }
@@ -51,4 +75,56 @@
 .Me:hover{
     transform: translateY(-0.5rem);
     filter: blur(0) grayscale(0);
+}
+
+@media (max-width:1025px){
+    .home-content h2{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .home-content p{
+        font-size: 0.8rem;
+        line-height: 1.6rem;
+    }
+
+    .home-img >div>img{
+        width: 20rem;
+    }
+}
+
+@media (max-width:769px){
+    .home-container{
+        flex-direction: column;
+    }
+
+    .home-img{
+        margin: 4rem 0;
+    }
+
+    .home-container h2{
+        margin-top: 3rem;
+    }
+
+    .home-content h2,
+    .home-content p{
+        width: auto;
+        text-align: center;
+    }
+
+    .home-container::after,
+    .home-container::before{
+        content: " ";
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .home-container::after{
+        top:0rem;
+        left:0rem;
+    }
+    .home-container::before{
+        bottom: 2rem;
+        right: 0rem
+    }
 }
