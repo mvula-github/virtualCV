@@ -10,7 +10,7 @@ const Home = () => {
     <div className='home-content'>
         <h2>My Adventures in the World of Information and Technology</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, molestiae dolor! Saepe vero optio aperiam tenetur odit animi ipsum officia!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, molestiae dolor! Saepe vero optio aperiam tenetur odit animi ipsum official
         </p>
     </div>
 
