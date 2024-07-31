@@ -5,7 +5,8 @@
     position: sticky;
     top:0;
     z-index: 30;
-    backdrop-filter: blur(50px) ;
+    backdrop-filter: blur(50px);
+    
 }
 
 
@@ -16,6 +17,7 @@
     justify-content: space-between;
     padding: 1rem 0;
     margin: 0 auto;
+    border: 1px solid white;
 }
 
 .logo{
@@ -112,7 +114,7 @@
     border: 1px solid white;
 }
 
-@media(max-width: 800px){
+@media(max-width: 768px){
     .menu-btn{
         display:block;
         margin-right:20px;
