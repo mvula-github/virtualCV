@@ -128,3 +128,24 @@
         right: 0rem
     }
 }
+
+@media (max-width:600px) {
+    .home-container h2{
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+    }
+
+    .home-container p{
+        font-size: 0.7;
+        line-height: 1.3rem;
+
+    }
+
+
+
+    .home-img>div>img{
+        width:15rem;
+    }
+    
+}
