@@ -49,7 +49,7 @@ export const SKILLS = [
     }
 ]
 
-export const WORK = [
+export const WORK_XP = [
     {
         title:"Student Assistant || North-West University",
         date:"July 2023 - October 2023",
