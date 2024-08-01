@@ -39,3 +39,29 @@
 .left-arrow{
     left:-2rem;
 }
+
+@media(max-width: 1025px) {
+
+    .left-arrow{
+        left:0rem;
+    }
+
+    .right-arrow{
+        right:0rem;
+    }
+}
+
+@media(max-width: 768px){
+    .xp-container h5{
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .left-arrow{
+        left: -1rem;
+    }
+
+    .right-arrow{
+        right: -1rem;
+    }
+}

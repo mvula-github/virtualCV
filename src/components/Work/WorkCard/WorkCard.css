@@ -40,3 +40,17 @@
     left: -1.3rem;
     top: 0.35rem;
 }
+
+@media(max-width:768px){
+    .work-xp-card{
+        margin:0;
+    }
+
+    .work-xp-card h6{
+        font-size: 0.9rem;
+    }
+
+    .work-xp-card ul li{
+        font-size: 0.75;
+    }
+}
