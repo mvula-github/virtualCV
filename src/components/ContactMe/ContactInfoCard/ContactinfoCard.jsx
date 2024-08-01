@@ -5,8 +5,14 @@ import "./ContactinfoCard.css"
 
 const ContactinfoCard = ({iconUrl, text}) => {
   return (
-    <div>ContactinfoCard</div>
-  )
-}
+    <div className='contact-info-card'>
+        <div className='icon'>
+            <img src={iconUrl} alt={text} />
+        </div>
 
-export default ContactinfoCard
+        <p>{text}</p>
+    </div>
+  );
+};
+
+export default ContactinfoCard;
