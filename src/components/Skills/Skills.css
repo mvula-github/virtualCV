@@ -9,7 +9,6 @@
 .skills-container h5{
     font-size: 1.5rem;
     font-weight: 600;
-    margin-top: 4rem;
     margin-bottom: 3.5rem;
 }
 
@@ -76,7 +75,6 @@
     }
 
     .skills-container h5{
-        margin-top: 4rem;
         font-size: 1rem;
         margin-bottom: 2rem;
     }
@@ -84,7 +82,7 @@
     .skills-container::after,
     .skills-container::before {
         width: 18rem;
-        height: 18 rem;
+        height: 18rem;
     }
 }
 

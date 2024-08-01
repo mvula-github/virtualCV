@@ -27,7 +27,6 @@ const Skills = () => {
                         isActive ={selectedSkill.title === item.title}
                         onClick ={()=> {
                         handleSelectedSkill(item);
-
                     }}
                     />   
                 ))}

@@ -48,7 +48,7 @@
 /* responsiveness in laptop resolution */
 @media(max-width:1025px){
     .skills-card{
-        margin:2rem
+        padding:2rem
     }
 
     .skills-card span{
