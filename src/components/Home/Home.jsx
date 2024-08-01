@@ -12,6 +12,7 @@ const Home = () => {
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, molestiae dolor! Saepe vero optio aperiam tenetur odit animi ipsum official
         </p>
+        <button className='home-btn'>Get CV</button>
     </div>
 
     {/* picture block */}
