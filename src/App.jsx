@@ -5,6 +5,7 @@ import "./App.css"
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Skills from "./components/Skills/Skills";
+import Work from "./components/Work/Work";
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
       <div className="container">
         <Home />
         <Skills />
+        <Work />
       </div>
 
     </>

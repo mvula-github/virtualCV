@@ -22,8 +22,8 @@ const Navbar = () => {
               <ul>
                   <li><a className='menu-item'>home</a> </li>
                   <li><a className='menu-item'>about</a> </li>
-                  <li><a className='menu-item'>projects</a> </li>
                   <li><a className='menu-item'>skills</a> </li>
+                  <li><a className='menu-item'>work</a> </li>
                   <li><a className='menu-item'>contacts</a> </li>
               </ul>
 
