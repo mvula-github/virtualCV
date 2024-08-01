@@ -2,6 +2,7 @@
 import React from 'react'
 import "./ContactMe.css"
 import ContactinfoCard from './ContactInfoCard/ContactinfoCard'
+import ContactForm from './ContactForm/ContactForm'
 
 const ContactMe = () => {
   return (
@@ -9,7 +10,7 @@ const ContactMe = () => {
         <h5>Contact Me</h5>
 
         <div className='contact-container'>
-            <div style={{flex: 1}}>
+            <div className="socials-containers">
                 <ContactinfoCard
                     iconUrl="../../../public/assets/email.png"
                     text = "mvulakolwen08@gmail.com"
@@ -24,7 +25,9 @@ const ContactMe = () => {
                 />
 
             </div>
-            <div style={{flex: 1}}></div>
+            <div className='contact-form-container'>
+                <ContactForm/>
+            </div>
 
         </div>
 

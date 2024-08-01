@@ -13,3 +13,8 @@
     display: felx;
     gap: 3rem;
 }
+
+.socials-container,
+.contact-form-container{
+    flex: 1;
+}
