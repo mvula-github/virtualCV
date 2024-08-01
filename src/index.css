@@ -6,7 +6,19 @@
   box-sizing: border-box;
 }
 
+html{
+  overflow-y: scroll;
+}
+
 body{
   color: white;
   background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(221, 221, 221);
 }

@@ -10,11 +10,22 @@
 }
 
 .contact-content {
-    display: felx;
+    display: flex;
     gap: 3rem;
 }
 
 .socials-container,
 .contact-form-container{
     flex: 1;
+}
+
+@media(max-width:768){
+    .contact-content{
+        flex-direction: column;
+    }
+
+    .contact-container h5{
+        font-size: 1.3rem;
+        margin-bottom:0rem ;
+    }
 }

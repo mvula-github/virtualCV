@@ -9,8 +9,8 @@ const ContactMe = () => {
     <section className='contact-container'>
         <h5>Contact Me</h5>
 
-        <div className='contact-container'>
-            <div className="socials-containers">
+        <div className='contact-content' >
+            <div className="socials-container">
                 <ContactinfoCard
                     iconUrl="../../../public/assets/email.png"
                     text = "mvulakolwen08@gmail.com"
@@ -23,9 +23,9 @@ const ContactMe = () => {
                     iconUrl="../../../public/assets/linkedin.png"
                     text = "https://www.linkedin.com/in/mvula"
                 />
-
             </div>
-            <div className='contact-form-container'>
+
+            <div className='contact-form-container' > 
                 <ContactForm/>
             </div>
 
