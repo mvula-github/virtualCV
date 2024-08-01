@@ -4,8 +4,11 @@ import "./SkillCard.css"
 
 // eslint-disable-next-line react/prop-types
 const SkillCard = ({title, iconUrl, isActive, onClick}) => {
+
   return (
-    <div className={`skills-card ${isActive ? "active" :""} `}>
+    <div className={`skills-card ${isActive ? "active" :""}`}
+        onClick = {() => onClick()}
+    >
         <div className='skills-icon'>
             <img src={iconUrl} alt={title} />
         </div>
@@ -13,7 +16,7 @@ const SkillCard = ({title, iconUrl, isActive, onClick}) => {
         <span>{title}</span>
 
     </div>
-  )
-}
+  );
+};
 
 export default SkillCard
