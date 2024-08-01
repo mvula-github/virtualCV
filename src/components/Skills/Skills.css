@@ -3,6 +3,8 @@
     position: relative;
 }
 
+
+
 /* formatting of heading */
 .skills-container h5{
     font-size: 1.5rem;
@@ -26,4 +28,67 @@
 
 .skills-info{
     flex:1;
+}
+
+/* adding background colour gradient same as home section*/
+.skills-container::after,
+.skills-container::before{
+    content: " ";
+    width: 28rem;
+    height: 28rem;
+    border-radius: 25rem;
+    background: rgb(31, 31, 31);
+    position: absolute;
+    z-index: -1;
+    filter: blur(283px);
+}
+
+.skills-container::before{
+    background-color: rgb(91, 91, 91);
+    bottom: 0rem;
+    right: 25rem;
+}
+
+
+
+@media (max-width:1025px) {
+    .skills{
+        padding-left: 1rem;
+    }
+
+    .skills,
+    .skills-content{
+        grid-gap:1rem;
+    }
+    
+}
+
+@media(max-width:769px){
+    .skills-content{
+        flex-direction: column;
+        gap:3rem;
+    }
+
+    .skills,
+    .skills-info {
+        width:100%;
+    }
+
+    .skills-container h5{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .skills-container::after,
+    .skills-container::before {
+        width: 18rem;
+        height: 18 rem;
+    }
+}
+
+@media (max-width:600px) {
+    .skills-container {
+        padding: 0;
+    }
+    
 }
