@@ -18,7 +18,7 @@
 .mobile-menu-container {
     width: 60vw;
     height: 100vh;
-    background-color: rgb(34, 34, 34);
+    background: radial-gradient(rgb(43, 41, 41) 0%, rgb(0, 0, 0) 100%);
     padding:2rem 0.5rem;
 }
 
@@ -31,6 +31,32 @@
 .mobile-menu h3{
     margin-bottom: 1rem;
 }
+
+.mobile-nav-btn{
+    width:5rem;
+    height:2.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 0.4rem;
+    color:white;
+    background:rgba(0, 0, 0, 0);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.mobile-nav-btn:hover{
+    width:6rem;
+    height: 3rem;
+    font-weight: 500;
+}
+
 
 /*modifiying appearance of sidebar items*/
 .mobile-menu ul{
