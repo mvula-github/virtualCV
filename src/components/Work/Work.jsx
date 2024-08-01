@@ -30,11 +30,28 @@ const Work = () => {
         ],
     };
 
+    const goRight = () => {
+        sliderRef.current.slickNext();
+    };
+
+    const goLeft = () => {
+        sliderRef.current.slickPrev();
+    };
+
   return (
     <section className='xp-container'>
         <h5>Work Experience</h5>
 
         <div className='xp-content'>
+
+            <div className="right-arrow" onClick={goRight}>
+                <span className='symbol' >{'>'}</span>
+            </div>
+
+            <div className="left-arrow" onClick={goLeft}>
+                <span className='symbol' >{'<'}</span>
+            </div>
+
            <Slider ref={sliderRef} {...settings}>
                 {WORK_XP.map((item) => (
                     <WorkCard key={item.title} details={item} />

@@ -8,3 +8,34 @@
     font-weight: 600;
     margin-bottom: 3rem;
 }
+
+.right-arrow,
+.left-arrow{
+    width:2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border: 1.5px solid black;
+    border-radius: 0.7rem ;
+    background: lightgray;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    top: 60%;
+}
+
+.right-arrow span,
+.left-arrow span{
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.right-arrow{
+    right:-2rem;
+}
+
+.left-arrow{
+    left:-2rem;
+}
