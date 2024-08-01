@@ -48,3 +48,24 @@ export const SKILLS = [
         ],
     }
 ]
+
+export const WORK = [
+    {
+        title:"Student Assistant || North-West University",
+        date:"July 2023 - October 2023",
+        responsibilities:[
+            "did my work",
+            "did my work",
+            "did my work",
+        ],
+    },
+    {
+        title:"Student Assistant || North-West Univerity",
+        date:"July 2024 - Present",
+        responsibilities:[
+            "did my work",
+            "did my work",
+            "did my work",
+        ],
+    },
+]
