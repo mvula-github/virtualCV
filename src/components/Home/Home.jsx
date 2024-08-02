@@ -10,7 +10,7 @@ const Home = () => {
     <div className='home-content'>
         <h2>Adventures in the World of Information and Technology</h2>
         <p>
-            I am Mvula Kolweni and I am an aspiring IT specialist, currently pursuing a BSc. Information Technology degree at the North-West University with an interest in system analysis, design, and development, so foolow along to know about me.
+            Hi, I name is Mvula Kolweni currently pursuing my bachelors degree and this is my e-portfolio.
         </p>
         <a href="./assets/docx/Mvula Kolweni CV.pdf" download="myCV" target="blank"><button className='home-btn'>Get CV</button></a>
     </div>
