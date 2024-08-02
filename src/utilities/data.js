@@ -54,18 +54,17 @@ export const WORK_XP = [
         title:"Student Assistant || North-West University ",
         date:"July 2023 - October 2023",
         duties:[
-            "did my work",
-            "did my work",
-            "did my work",
+            "Attend lectures and support to provide support to students.",
+            "Provide academic support to students.",
+            "Grade assignments and provide feedback.",
         ],
     },
     {
         title:"Student Assistant || North-West Univerity",
         date:"July 2024 - Present",
         duties:[
-            "did my work",
-            "did my work",
-            "did my work",
+            "Grade formal tests and assignments and provide feedback.",
+            "Provide academic support to students.",
         ],
     },
 ]
