@@ -19,9 +19,9 @@
     flex: 1;
 }
 
-@media(max-width:768){
+@media(max-width:768px){
     .contact-content{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .contact-container h5{
