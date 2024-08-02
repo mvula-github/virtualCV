@@ -21,7 +21,7 @@ const MobileNav = ({isOpen, toggleMenu}) => {
           <li><a className='menu-item'>contacts</a> </li>
         </ul>
 
-        <button className='mobile-nav-btn'>Get CV</button>
+        <a href="./assets/docx/Mvula Kolweni CV.pdf" download="myCV" target="blank"><button className='mobile-nav-btn'>Get CV</button></a>
 
       </div>
     </div>

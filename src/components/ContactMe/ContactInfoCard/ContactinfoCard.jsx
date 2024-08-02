@@ -10,7 +10,7 @@ const ContactinfoCard = ({iconUrl, text}) => {
             <img src={iconUrl} alt={text} />
         </div>
 
-        <a href={text}><p>{text}</p></a>
+        <a href={text} target="blank"><p>{text}</p></a>
     </div>
   );
 };
