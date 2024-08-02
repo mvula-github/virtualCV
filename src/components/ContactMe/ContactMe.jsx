@@ -12,15 +12,15 @@ const ContactMe = () => {
         <div className='contact-content' >
             <div className="socials-container">
                 <ContactinfoCard
-                    iconUrl="../../../assets/email.png"
+                    iconUrl="./assets/email.png"
                     text = "mvulakolwen08@gmail.com"
                 />
                 <ContactinfoCard
-                    iconUrl="../../../assets/github.png"
+                    iconUrl="./assets/github.png"
                     text = "https://github.com/mvula-github"
                 />
                 <ContactinfoCard
-                    iconUrl="../../../assets/linkedin.png"
+                    iconUrl="./assets/linkedin.png"
                     text = "https://www.linkedin.com/in/mvula"
                 />
             </div>

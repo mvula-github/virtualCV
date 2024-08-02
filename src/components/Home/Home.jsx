@@ -18,7 +18,7 @@ const Home = () => {
     {/* picture block */}
     <div className="home-img">
         <div>
-            <img className="Me" src="../assets/Me/me4.jpg" alt="" />
+            <img className="Me" src="./assets/Me/me4.jpg" alt="" />
             {/*<h5>photographed by: Jameela Sparks</h5>*/}
         </div>
     </div>
