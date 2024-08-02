@@ -15,7 +15,8 @@ const MobileNav = ({isOpen, toggleMenu}) => {
         <h3 className='logo'>ePortfolio</h3>
 
         <ul>
-          <li><Link to="skills" spy={true} smooth={true} hashSpy={true} offset={-1300} duration={500} className='menu-item' onClick={toggleMenu}>home</Link> </li>
+          <li><Link to="skills" spy={true} smooth={true} hashSpy={true} offset={-2000} duration={500} className='menu-item' onClick={toggleMenu}>home</Link> </li>
+          <li><Link to="skills" spy={true} smooth={true} hashSpy={true} offset={-1130} duration={500} className='menu-item' onClick={toggleMenu}>about</Link> </li>
           <li><Link to="skills" spy={true} smooth={true} hashSpy={true} offset={-150} duration={500} className='menu-item' onClick={toggleMenu}>skills</Link> </li>
           <li><Link to="skills" spy={true} smooth={true} hashSpy={true} offset={400} duration={500} className='menu-item' onClick={toggleMenu}>work</Link> </li>
           <li><Link to="skills" spy={true} smooth={true} hashSpy={true} offset={1050} duration={500} className='menu-item' onClick={toggleMenu}>contacts</Link> </li>

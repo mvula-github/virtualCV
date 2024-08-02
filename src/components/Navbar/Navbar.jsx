@@ -21,8 +21,9 @@ const Navbar = () => {
           <div className='nav-content'>
               <h3 className='logo'>ePortfolio</h3>
               <ul>
-                  <li><Link className='menu-item' to="skills" spy={true} smooth={true} hashSpy={true} offset={-1000} duration={500}>home</Link> </li>
-                  <li><Link className='menu-item' to="skills" spy={true} smooth={true} hashSpy={true} offset={-200} duration={500}>skills</Link> </li>
+                  <li><Link className='menu-item' to="skills" spy={true} smooth={true} hashSpy={true} offset={-1600} duration={500}>home</Link> </li>
+                  <li><Link className='menu-item' to="skills" spy={true} smooth={true} hashSpy={true} offset={-900} duration={500}>about</Link> </li>
+                  <li><Link className='menu-item' to="skills" spy={true} smooth={true} hashSpy={true} offset={-210} duration={500}>skills</Link> </li>
                   <li><Link className='menu-item' to="skills" spy={true} smooth={true} hashSpy={true} offset={230} duration={500}>work</Link> </li>
                   <li><Link className='menu-item' to="skills" spy={true} smooth={true} hashSpy={true} offset={1000} duration={500}>contact</Link> </li>
               </ul>
