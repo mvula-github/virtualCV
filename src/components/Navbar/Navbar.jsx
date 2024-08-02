@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, {useState} from 'react'
+import {Link} from 'react-scroll'
 import "./Navbar.css"
 import MobileNav from "./MobileNav/MobileNav"
 
@@ -20,11 +21,10 @@ const Navbar = () => {
           <div className='nav-content'>
               <h3 className='logo'>ePortfolio</h3>
               <ul>
-                  <li><a className='menu-item'>home</a> </li>
-                  <li><a className='menu-item'>about</a> </li>
-                  <li><a className='menu-item'>skills</a> </li>
-                  <li><a className='menu-item'>work</a> </li>
-                  <li><a className='menu-item'>contacts</a> </li>
+                  <li><Link className='menu-item' to="skills" spy={true} smooth={true} hashSpy={true} offset={-1000} duration={500}>home</Link> </li>
+                  <li><Link className='menu-item' to="skills" spy={true} smooth={true} hashSpy={true} offset={-200} duration={500}>skills</Link> </li>
+                  <li><Link className='menu-item' to="skills" spy={true} smooth={true} hashSpy={true} offset={230} duration={500}>work</Link> </li>
+                  <li><Link className='menu-item' to="skills" spy={true} smooth={true} hashSpy={true} offset={1000} duration={500}>contact</Link> </li>
               </ul>
 
               <button className='menu-btn' onClick={toggleMenu}>
