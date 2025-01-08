@@ -65,8 +65,8 @@ export const WORK_XP = [
     title: "Student Assistant - Data Structures and Algorithms",
     date: "July 2024 - October 2024",
     duties: [
-      "Evaluated and graded formal tests and assignments with attention to detail and consistency",
-      "Provided academic support by simplifying complex data structure concepts for students",
+      "Evaluated and graded formal tests and assignments with attention to detail and consistency.",
+      "Provided academic support by simplifying complex data structure concepts for students.",
     ],
   },
 ];
