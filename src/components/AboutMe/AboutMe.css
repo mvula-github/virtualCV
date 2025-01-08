@@ -1,185 +1,178 @@
-.about-container{
-    display: flex;
-    align-items: center;
-    position: relative;
+.about-container {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-
 
 /**These are circles used for gradient visual effect*/
 .about-container::after,
-.about-container::before{
-    content: " ";
-    width: 28.125rem;
-    height: 28.125rem;
-    background:grey;
-    border-radius: 28.125rem;
-    position: absolute;
-    z-index: -1;
-    filter: blur(225px);
+.about-container::before {
+  content: " ";
+  width: 28.125rem;
+  height: 28.125rem;
+  background: grey;
+  border-radius: 28.125rem;
+  position: absolute;
+  z-index: -1;
+  filter: blur(225px);
 }
 /*2nd circle*/
-.about-container::after{
-    top: -3rem;
-    left: -5rem;
+.about-container::after {
+  top: -3rem;
+  left: -5rem;
 }
 
-.about-container::before{
-    bottom: 2rem;
-    right:0rem;
+.about-container::before {
+  bottom: 2rem;
+  right: 0rem;
 }
 
-.about-content{
-    flex: 1;
+.about-content {
+  flex: 1;
 }
 
-.about-content h5{
-    font-size: 1.5rem;
-    font-weight:600;
-    margin-bottom: 3rem;
+.about-content h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
 }
 
-
-.about-content p{
-    width: 80%;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 2rem;
-    text-align: justify;
+.about-content p {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: justify;
 }
 
-.about-btn{
-    width:6rem;
-    height:2.5rem;
+.about-btn {
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 0.4rem;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  line-height: 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.about-btn:hover {
+  width: 7rem;
+  height: 3rem;
+  font-weight: 500;
+  color: black;
+  background: white;
+  border: 1px solid white;
+}
+
+.about-img {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.about-img > div {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.about-img > div > img {
+  width: 25rem;
+  transition: all 2.5s ease;
+}
+
+.Me {
+  width: 25rem;
+  filter: blur(3px) grayscale(1);
+}
+
+.about > div > img:hover,
+.Me:hover {
+  transform: translateY(-0.5rem);
+  filter: blur(0) grayscale(0);
+}
+
+@media (max-width: 1025px) {
+  .about-content h5 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .about-content p {
     font-size: 0.8rem;
-    font-weight: 500;
-    margin-top: 1rem;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-    border-radius: 0.4rem;
-    color:white;
-    background:rgba(0, 0, 0, 0);
-    line-height: 0;
-    cursor: pointer;
-    transition: all 0.5s ease;
+    line-height: 1.6rem;
+  }
+
+  .about-img > div > img {
+    width: 23rem;
+  }
 }
 
-.about-btn:hover{
-    width:7rem;
-    height: 3rem;
-    font-weight: 500;
-    color:black;
-    background: white;
-    border: 1px solid white;
-}
+@media (max-width: 769px) {
+  .about-container {
+    flex-direction: column;
+  }
 
-.about-img{
-    flex: 1;
+  .about-img {
+    margin: 4rem 0;
+  }
+
+  .about-container h5 {
+    margin-top: 0rem;
+  }
+
+  .about-content h5,
+  .about-content p {
+    width: auto;
+    text-align: center;
+  }
+
+  .about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1rem;
-    margin-top: 5rem;
+  }
+
+  .about-container::after,
+  .about-container::before {
+    content: " ";
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .about-container::after {
+    top: 0rem;
+    left: 0rem;
+  }
+  .about-container::before {
+    bottom: 2rem;
+    right: 0rem;
+  }
 }
 
-.about-img > div{
-    display: flex;
-    align-items: flex-end;
-    gap: 2rem;
-}
+@media (max-width: 600px) {
+  .about-container h5 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
 
-.about-img >div >img{
-    width: 25rem;
-    transition: all 2.5s ease;
-}
+  .about-container p {
+    font-size: 0.7;
+    line-height: 1.3rem;
+  }
 
-.Me{
-    width: 25rem;
-    filter: blur(3px) grayscale(1);
-}
-
-.about>div>img:hover,
-.Me:hover{
-    transform: translateY(-0.5rem);
-    filter: blur(0) grayscale(0);
-}
-
-@media (max-width:1025px){
-    .about-content h5{
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-
-    .about-content p{
-        font-size: 0.8rem;
-        line-height: 1.6rem;
-    }
-
-    .about-img >div>img{
-        width: 23rem;
-    }
-
-}
-
-@media (max-width:769px){
-    .about-container{
-        flex-direction: column;
-    }
-
-    .about-img{
-        margin: 4rem 0;
-    }
-
-    .about-container h5{
-        margin-top: 0rem;
-    }
-
-    .about-content h5,
-    .about-content p{
-        width: auto;
-        text-align: center;
-    }
-
-    .about-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
-    .about-container::after,
-    .about-container::before{
-        content: " ";
-        width: 18rem;
-        height: 18rem;
-    }
-
-    .about-container::after{
-        top:0rem;
-        left:0rem;
-    }
-    .about-container::before{
-        bottom: 2rem;
-        right: 0rem
-    }
-}
-
-@media (max-width:600px) {
-    .about-container h5{
-        font-size: 2rem;
-        line-height: 2.5rem;
-
-    }
-
-    .about-container p{
-        font-size: 0.7;
-        line-height: 1.3rem;
-
-    }
-
-    .about-img>div>img{
-        width:15rem;
-    }
-    
+  .about-img > div > img {
+    width: 15rem;
+  }
 }
