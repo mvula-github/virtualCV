@@ -1,56 +1,56 @@
-.work-xp-card{
-    background: rgb(24, 22, 22);
-    border-radius: 0.65rem;
-    border: 1.5px solid white;
-    padding: 1.5rem;
-    margin: 0 1rem;
+.work-xp-card {
+  background: rgb(24, 22, 22);
+  border-radius: 0.65rem;
+  border: 1.5px solid white;
+  padding: 1.5rem;
+  margin: 0 1rem;
 }
 
-.work-xp-card h6{
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 0.7rem;
+.work-xp-card h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
 }
 
-.work-duration{
-    display: inline-block;
-    font-size:0.7rem;
-    font-weight:400;
-    background: rgb(53, 53, 53);
-    border-radius: 0.3rem;
-    padding: 0.4rem 0.6rem;
-    margin-bottom: 1rem;
+.work-duration {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  background: rgb(53, 53, 53);
+  border-radius: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 1rem;
 }
 
-.work-xp-card ul li{
-    list-style: none;
-    font-size: 0.8rem;
-    font-weight: 400;
-    margin-bottom:0.5rem;
-    position: relative;
+.work-xp-card ul li {
+  list-style: none;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  position: relative;
 }
 
-.work-xp-card ul li::after{
-    content: " ";
-    width:0.5rem;
-    height: 0.5rem;
-    background-color: rgb(53, 53, 53);
-    border-radius: 0.5rem;
-    position: absolute;
-    left: -1.3rem;
-    top: 0.35rem;
+.work-xp-card ul li::after {
+  content: " ";
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgb(53, 53, 53);
+  border-radius: 0.5rem;
+  position: absolute;
+  left: -1.3rem;
+  top: 0.35rem;
 }
 
-@media(max-width:768px){
-    .work-xp-card{
-        margin:0;
-    }
+@media (max-width: 768px) {
+  .work-xp-card {
+    margin: 0;
+  }
 
-    .work-xp-card h6{
-        font-size: 0.9rem;
-    }
+  .work-xp-card h6 {
+    font-size: 0.9rem;
+  }
 
-    .work-xp-card ul li{
-        font-size: 0.75;
-    }
+  .work-xp-card ul li {
+    font-size: 0.75;
+  }
 }
