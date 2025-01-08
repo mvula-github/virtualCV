@@ -1,11 +1,9 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
-import "./Footer.css"
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
-  return (
-    <div className='footer'>&copy;  2024 Mvula Kolweni</div>
-  )
-}
+  return <div className="footer">&copy; 2025 Mvula Kolweni</div>;
+};
 
-export default Footer
+export default Footer;

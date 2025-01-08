@@ -7,10 +7,11 @@ const Home = () => {
     <section className="home-container">
       {/* The heading or my statement block */}
       <div className="home-content">
-        <h2>Adventures in the World of Information and Technology</h2>
+        <h2>Adventures in my World of Information Technology</h2>
         <p>
-          Hi, I name is Mvula Kolweni currently pursuing my bachelors degree and
-          this is my e-portfolio.
+          Hey there &#128075;, I am Mvula a recent IT gaduate, currently
+          persuing my CompSci honours degree and this is my e-Portfolio
+          &#128515;.
         </p>
         <a
           href="./assets/docx/Mvula Kolweni CV.pdf"
