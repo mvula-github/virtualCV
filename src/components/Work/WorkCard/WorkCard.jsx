@@ -6,8 +6,9 @@ import "./WorkCard.css";
 const WorkCard = ({ details }) => {
   return (
     <div className="work-xp-card">
+      <h6> {details.employer}</h6>
       {/* extracting job title and dislpaying it on work card */}
-      <h6> {details.title}</h6>
+      <h6 style={{ fontSize: "0.8rem" }}> {details.title}</h6>
 
       {/* extracting work period and displaying them on work-card */}
       <div className="work-duration"> {details.date}</div>
