@@ -94,6 +94,7 @@
 
 .Me {
   width: 25rem;
+  border-radius: 1.5em;
   filter: blur(3px) grayscale(1);
 }
 

@@ -1,16 +1,16 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from 'react'
-import "./ContactinfoCard.css"
+import React from "react";
+import "./ContactinfoCard.css";
 
-const ContactinfoCard = ({iconUrl, text}) => {
+const ContactinfoCard = ({ iconUrl, text }) => {
   return (
-    <div className='contact-info-card'>
-        <div className='icon'>
-            <img src={iconUrl} alt={text} />
-        </div>
+    <div className="contact-info-card">
+      <div className="icon">
+        <img src={iconUrl} alt={text} />
+      </div>
 
-        <a href={text} target="blank"><p>{text}</p></a>
+      <p>{text}</p>
     </div>
   );
 };
