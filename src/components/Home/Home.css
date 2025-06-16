@@ -4,24 +4,22 @@
   position: relative;
 }
 
-/**These are circles used for gradient visual effect*/
+/** Gradient circles for visual effect */
 .home-container::after,
 .home-container::before {
   content: " ";
   width: 28.125rem;
   height: 28.125rem;
   background: gray;
-  border-radius: 28.125rem;
+  border-radius: 50%;
   position: absolute;
   z-index: -1;
   filter: blur(225px);
 }
-/*2nd circle*/
 .home-container::after {
   top: -3rem;
   left: -5rem;
 }
-
 .home-container::before {
   bottom: 2rem;
   right: 0rem;
@@ -31,7 +29,7 @@
   flex: 1;
 }
 
-.home-content h2 {
+.home-content h1 {
   font-size: 3.5rem;
   font-weight: 600;
   line-height: 4rem;
@@ -45,31 +43,32 @@
   line-height: 2rem;
 }
 
-.home-btn {
-  width: 6rem;
-  height: 2.5rem;
-  font-size: 0.8rem;
-  font-weight: 500;
-  margin-top: 1rem;
-  display: flex;
+.home-btn-link {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid white;
+  width: 7rem;
+  height: 2.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  border: 1px solid #f7f7f7;
   border-radius: 0.4rem;
-  color: white;
-  background: rgba(0, 0, 0, 0);
-  line-height: 0;
+  color: #f7f7f7;
+  background: transparent;
+  text-decoration: none;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.home-btn:hover {
-  width: 7rem;
-  height: 3rem;
-  font-weight: 500;
-  color: black;
-  background: white;
-  border: 1px solid white;
+.home-btn-link:hover,
+.home-btn-link:focus {
+  color: #3674b5;
+  background: #f7f7f7;
+  border: 1px solid #3674b5;
+  outline: 2px solid #3674b5;
+  outline-offset: 2px;
 }
 
 .home-img {
@@ -89,30 +88,26 @@
 
 .home-img > div > img {
   width: 25rem;
-  transition: all 2.5s ease;
-}
-
-.Me {
-  width: 25rem;
   border-radius: 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.home > div > img:hover,
+.home-img > div > img:hover,
 .Me:hover {
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
 }
 
 @media (max-width: 1025px) {
-  .home-content h2 {
+  .home-content h1 {
     font-size: 3rem;
     line-height: 3rem;
   }
-
   .home-content p {
     font-size: 0.8rem;
     line-height: 1.6rem;
   }
-
   .home-img > div > img {
     width: 23rem;
   }
@@ -122,34 +117,27 @@
   .home-container {
     flex-direction: column;
   }
-
   .home-img {
     margin: 4rem 0;
   }
-
-  .home-container h2 {
+  .home-container h1 {
     margin-top: 3rem;
   }
-
-  .home-content h2,
+  .home-content h1,
   .home-content p {
     width: auto;
     text-align: center;
   }
-
   .home-content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .home-container::after,
   .home-container::before {
-    content: " ";
     width: 18rem;
     height: 18rem;
   }
-
   .home-container::after {
     top: 0rem;
     left: 0rem;
@@ -161,16 +149,14 @@
 }
 
 @media (max-width: 600px) {
-  .home-container h2 {
+  .home-container h1 {
     font-size: 2rem;
     line-height: 2.5rem;
   }
-
   .home-container p {
-    font-size: 0.7;
+    font-size: 0.7rem;
     line-height: 1.3rem;
   }
-
   .home-img > div > img {
     width: 15rem;
   }
