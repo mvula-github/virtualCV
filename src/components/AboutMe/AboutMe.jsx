@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./AboutMe.css";
-import meImg from "../../../public/assets/Me/me3.jpg"; // Adjust path as needed
+import meImg from "/assets/Me/me3.jpg"; // Adjust path as needed
 
 const AboutMe = () => (
   <section className="about-container" aria-labelledby="about-heading">
