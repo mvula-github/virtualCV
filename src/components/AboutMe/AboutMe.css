@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   position: relative;
+  padding: 2rem 1rem;
+  gap: 2rem;
 }
 
 /**These are circles used for gradient visual effect*/
@@ -10,16 +12,16 @@
   content: " ";
   width: 28.125rem;
   height: 28.125rem;
-  background: grey;
-  border-radius: 28.125rem;
+  background: gray;
+  border-radius: 50%;
   position: absolute;
   z-index: -1;
   filter: blur(225px);
 }
 /*2nd circle*/
 .about-container::after {
-  top: -3rem;
-  left: -5rem;
+  top: -2rem;
+  left: -4rem;
 }
 
 .about-container::before {
@@ -31,10 +33,10 @@
   flex: 1;
 }
 
-.about-content h5 {
-  font-size: 1.5rem;
+.about-content h2 {
+  font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .about-content p {
@@ -43,33 +45,6 @@
   font-weight: 400;
   line-height: 1.75rem;
   text-align: justify;
-}
-
-.about-btn {
-  width: 6rem;
-  height: 2.5rem;
-  font-size: 0.8rem;
-  font-weight: 500;
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid white;
-  border-radius: 0.4rem;
-  color: white;
-  background: rgba(0, 0, 0, 0);
-  line-height: 0;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
-.about-btn:hover {
-  width: 7rem;
-  height: 3rem;
-  font-weight: 500;
-  color: black;
-  background: white;
-  border: 1px solid white;
 }
 
 .about-img {
@@ -81,41 +56,31 @@
   margin-top: 5rem;
 }
 
-.about-img > div {
-  display: flex;
-  align-items: flex-end;
-  gap: 2rem;
-}
-
-.about-img > div > img {
-  width: 25rem;
-  transition: all 2.5s ease;
-}
-
-.Me {
+.about-img img.Me {
   width: 25rem;
   border-radius: 1.5em;
-  filter: blur(3px) grayscale(1);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s, filter 0.3s;
 }
 
-.about > div > img:hover,
-.Me:hover {
-  transform: translateY(-0.5rem);
-  filter: blur(0) grayscale(0);
+.about-img img.Me:hover,
+.about-img img.Me:focus {
+  transform: translateY(-0.5rem) scale(1.03);
+  filter: grayscale(0.2);
+  outline: 2px solid #0078d4;
 }
 
+/* Responsive styles */
 @media (max-width: 1025px) {
-  .about-content h5 {
+  .about-content h2 {
     font-size: 3rem;
     line-height: 3rem;
   }
-
   .about-content p {
     font-size: 0.8rem;
     line-height: 1.6rem;
   }
-
-  .about-img > div > img {
+  .about-img img.Me {
     width: 23rem;
   }
 }
@@ -123,35 +88,26 @@
 @media (max-width: 769px) {
   .about-container {
     flex-direction: column;
+    gap: 0;
   }
-
   .about-img {
     margin: 4rem 0;
   }
-
-  .about-container h5 {
-    margin-top: 0rem;
-  }
-
-  .about-content h5,
+  .about-content h2,
   .about-content p {
     width: auto;
     text-align: center;
   }
-
   .about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .about-container::after,
   .about-container::before {
-    content: " ";
     width: 18rem;
     height: 18rem;
   }
-
   .about-container::after {
     top: 0rem;
     left: 0rem;
@@ -163,17 +119,15 @@
 }
 
 @media (max-width: 600px) {
-  .about-container h5 {
+  .about-content h2 {
     font-size: 2rem;
     line-height: 2.5rem;
   }
-
-  .about-container p {
-    font-size: 0.7;
+  .about-content p {
+    font-size: 0.7rem;
     line-height: 1.3rem;
   }
-
-  .about-img > div > img {
+  .about-img img.Me {
     width: 15rem;
   }
 }

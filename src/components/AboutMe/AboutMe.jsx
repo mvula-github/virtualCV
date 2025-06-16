@@ -1,38 +1,36 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./AboutMe.css";
+import meImg from "../../../public/assets/Me/me3.jpg"; // Adjust path as needed
 
-const AboutMe = () => {
-  return (
-    <section className="about-container">
-      {/* picture block */}
-      <div className="about-img">
-        <div>
-          <img className="Me" src="./assets/Me/me5.jpg" alt="" />
-        </div>
-      </div>
-
-      {/* The heading or my statement block */}
-      <div className="about-content">
-        <h5>About Me</h5>
-        <p>
-          I’m a recent graduate from North-West University with a Bachelor’s
-          degree in Information Technology, currently pursuing an Honours in
-          Computer Science & Information Technology. I’m highly motivated and
-          passionate about problem-solving, with a strong foundation in IT
-          principles. I’m eager to take on a challenging entry-level role in a
-          dynamic and innovative tech environment where I can contribute to
-          meaningful projects and grow professionally. My skills include
-          object-oriented programming, database management systems, and a
-          variety of technical tools, which I’ve applied successfully in
-          academic projects and as a part-time Student Assistant. I thrive both
-          independently and in team settings, and I’m always ready to adapt,
-          learn new technologies, and bring value to a forward-thinking
-          organization.
-        </p>
-      </div>
-    </section>
-  );
-};
+const AboutMe = () => (
+  <section className="about-container" aria-labelledby="about-heading">
+    <div className="about-img">
+      <img
+        className="Me"
+        src={meImg}
+        alt="Portrait of Mvula Kolweni"
+        loading="lazy"
+      />
+    </div>
+    <div className="about-content">
+      <h2 id="about-heading">About Me</h2>
+      <p>
+        As a recent IT graduate and an honours candidate at North-West
+        University, I’m excited about using technology to solve real-world
+        problems! My journey involves everything from building full-stack
+        applications and cryptographic tools to developing practical model
+        systems. With a natural curiosity and a passion for continuous learning,
+        I dive into areas like cloud security, software engineering, and DevOps.
+        I also love helping fellow students grasp complex topics like data
+        structures and algorithms, as well as Decision Support Systems, and I
+        bring that same clarity and support to the teams I work with. Right now,
+        I’m focused on growing in a vibrant environment that values innovation
+        and people. Looking ahead, I see myself evolving into a well-rounded IT
+        specialist with strong connections both locally and globally.
+      </p>
+    </div>
+  </section>
+);
 
 export default AboutMe;

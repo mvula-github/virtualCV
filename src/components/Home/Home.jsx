@@ -7,11 +7,14 @@ const Home = () => {
     <section className="home-container">
       {/* The heading or my statement block */}
       <div className="home-content">
-        <h2>Adventures in my World of Information Technology</h2>
+        <h2>
+          Adventures &#128747; in my Amazing World &#x1F30D; <br /> of
+          Technology
+        </h2>
         <p>
-          Hey there &#128075;, I am Mvula a recent IT gaduate, currently
-          persuing my CompSci honours degree and this is my e-Portfolio
-          &#128515;.
+          Hey there &#128075;, I am Mvula a recent IT graduate, currently
+          pursuing my honours degree. I am a ManCity Fan, and I really aspire to
+          be an IT Specialist. So this is my e-Portfolio &#128515;.
         </p>
         <a
           href="./assets/docx/Mvula Kolweni CV.pdf"
@@ -25,8 +28,7 @@ const Home = () => {
       {/* picture block */}
       <div className="home-img">
         <div>
-          <img className="Me" src="./assets/Me/me4.jpg" alt="" />
-          {/*<h5>photographed by: Jameela Sparks</h5>*/}
+          <img className="Me" src="./assets/Me/myself.jpg" alt="" />
         </div>
       </div>
     </section>
