@@ -1,80 +1,120 @@
 /*syling to create menu items as a side-bar items*/
-.mobile-menu{
-    width: 60vw;
-    height: 100vh;
-    display:block;
-    background-color: black;
-    position: fixed;
-    left:0;
-    top:0;
-    z-index: 999 !important;
-    opacity:0;
-    box-shadow: 0px 29px 80px black;
-    transition: all 0.5s ease;
-    transform: translateX(-100vw);
+.mobile-menu {
+  width: 60vw;
+  height: 100vh;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999 !important;
+  opacity: 0;
+  box-shadow: 0px 29px 80px black;
+  transition: all 0.5s ease;
+  transform: translateX(-100vw);
 }
 
 /*styling the "side bar" panel display*/
 .mobile-menu-container {
-    width: 60vw;
-    height: 100vh;
-    background: radial-gradient(rgb(43, 41, 41) 0%, rgb(0, 0, 0) 100%);
-    padding:2rem 0.5rem;
+  width: 60vw;
+  height: 100vh;
+  background: radial-gradient(rgb(43, 41, 41) 0%, rgb(0, 0, 0) 100%);
+  padding: 2rem 0.5rem;
+  position: relative;
 }
 
-.mobile-menu.active{
-    opacity: 1;
-    transform: translateX(0);
+.mobile-menu.active {
+  opacity: 1;
+  transform: translateX(0);
 }
 
-
-.mobile-menu h3{
-    margin-bottom: 1rem;
+.mobile-menu h3 {
+  margin-bottom: 1rem;
+  color: #fff;
 }
 
-.mobile-nav-btn{
-    width:5rem;
-    height:2.5rem;
-    font-size: 0.8rem;
-    font-weight: 500;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-    border-radius: 0.4rem;
-    color:white;
-    background:rgba(0, 0, 0, 0);
-    line-height: 0;
-    cursor: pointer;
-    transition: all 0.5s ease;
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+  transition: color 0.2s;
 }
 
-.mobile-nav-btn:hover{
-    width:6rem;
-    height: 3rem;
-    font-weight: 500;
+.close-btn:hover,
+.close-btn:focus {
+  color: #0078d4;
+  outline: 2px solid #0078d4;
+  outline-offset: 2px;
 }
 
-a{
-    text-decoration: none;
+.mobile-nav-btn {
+  width: 5rem;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 0.4rem;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  line-height: 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
+.mobile-nav-btn:hover,
+.mobile-nav-btn:focus {
+  width: 6rem;
+  height: 3rem;
+  font-weight: 500;
+  color: #0078d4;
+  background: #fff;
+  border: 1px solid #0078d4;
+  outline: 2px solid #0078d4;
+  outline-offset: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-item {
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  color: #0078d4;
+  outline: 2px solid #0078d4;
+  outline-offset: 2px;
+}
 
 /*modifiying appearance of sidebar items*/
-.mobile-menu ul{
-    display:flex;
-    flex-direction: column;
-    gap: 1rem;
-    list-style: none;
-    margin-left: -0.5rem;
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  margin-left: -0.5rem;
+  margin-top: 2rem;
 }
 
 /*dimention resolution to display the side bar*/
-@media(max-width:769px) {
-    .mobile-menu{
-        display:block;
-    }    
-
+@media (max-width: 769px) {
+  .mobile-menu {
+    display: block;
+  }
 }
