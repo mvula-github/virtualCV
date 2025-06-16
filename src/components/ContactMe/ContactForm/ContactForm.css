@@ -1,75 +1,111 @@
-.contact-form-content{
-    width:100%;
+.contact-form-content {
+  width: 100%;
 }
 
-form{
-    display:flex;
-    flex-direction: column;
-    grid-gap:1.5rem
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.name-container{
-    display:flex;
-    align-items:center;
-    grid-gap: 1.5rem;
+.name-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 form input,
-form textarea{
-    flex:1;
-    width:100%;
-    font-size:1rem;
-    font-weight: 500;
-    color:black;
-    background: lightgray;
-    border-radius: 0.6rem;
-    border: 1.5px solid white;
-    padding: 1rem;
+form textarea {
+  flex: 1;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  background: #f3f3f3;
+  border-radius: 0.6rem;
+  border: 1.5px solid #e0e0e0;
+  padding: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-form button{
-    width:6rem;
-    height:3rem;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 1rem;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-    border-radius: 0.4rem;
-    color:white;
-    background:rgba(0, 0, 0, 0);
-    line-height: 0;
-    cursor: pointer;
-    transition: all 0.5s ease;
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #0078d4;
+  box-shadow: 0 0 0 2px #0078d420;
 }
 
-form button:hover{
-    width: 7rem;
-    height: 3.2rem;
-    font-size: 1rem;
-    color: black;
-    background: white;
+form button {
+  width: 6rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.4rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  line-height: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-@media(max-width:450px){
-    .name-container{
-        flex-direction: column;
-        align-items: flex-start;
-    }
+form button:hover,
+form button:focus {
+  width: 7rem;
+  height: 3.2rem;
+  font-size: 1rem;
+  color: #0078d4;
+  background: #fff;
+  border-color: #0078d4;
+}
 
-    form input,
-    form textarea{
-        padding:0.2rem;
-        border-radius: 0.3rem;
-    }
+@media (max-width: 450px) {
+  .name-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
 
-    form button{
-        font-size: 0.9ren;
-        padding:0.7rem;
-        border-radius:0.3rem;
-    }
-    
-    
+  form input,
+  form textarea {
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+  }
+
+  form button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+  }
+}
+
+/* Visually hidden class for accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+  display: block;
+}
+
+.success-message {
+  color: #388e3c;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
 }
