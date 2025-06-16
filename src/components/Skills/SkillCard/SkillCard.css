@@ -1,26 +1,38 @@
 /*displaying border, and formatting elements*/
 .skills-card {
   border-radius: 0.5rem;
-  border: 1.5px solid white;
+  border: 1.5px solid #fff;
   padding: 2rem;
   text-align: center;
-  background: #578fca;
+  background: transparent;
   backdrop-filter: blur(1rem);
   position: relative;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  color: #fff;
 }
 
 /*gradient color look when hovering in block*/
 .skills-card:hover,
-.skills-card.active {
-  background: linear-gradient(rgb(114, 114, 114) 0%, #578fca 100%);
+.skills-card.active,
+.skills-card:focus {
+  background: linear-gradient(#f7f7f7 0%, #578fca 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  border-color: #578fca;
+}
+
+.skills-card:focus {
+  outline: 2px solid #578fca;
+  outline-offset: 2px;
 }
 
 /* text formatting of skill card heading */
 .skills-card span {
   font-size: 1.3rem;
   font-weight: 500;
+  color: #f7f7f7;
 }
 
 /* styling and formatting icon skill card block*/
@@ -30,12 +42,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgb(119, 119, 119) 0%, rgb(8, 8, 8) 100%);
+  background: linear-gradient(#578fca 0%, #f7f7f7 100%);
   border-radius: 0.65rem;
-  border: 1.5px solid white;
+  border: 1.5px solid #f7f7f7;
   position: absolute;
   top: -1rem;
   left: -1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 /* formatting each skill card image */
@@ -67,6 +80,11 @@
 
 /* responsiveness in tablet/mobile resolution */
 @media (max-width: 768px) {
+  .skills-card {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
   .skills-card span {
     font-size: 0.8rem;
   }
