@@ -14,13 +14,6 @@
   gap: 3rem;
 }
 
-.socials-container {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 2rem;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-}
-
 .socials-container,
 .contact-form-container {
   flex: 1;
