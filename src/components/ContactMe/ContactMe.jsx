@@ -3,11 +3,9 @@ import React from "react";
 import "./ContactMe.css";
 import ContactinfoCard from "./ContactInfoCard/ContactinfoCard";
 import ContactForm from "./ContactForm/ContactForm";
-
-// If using a bundler, import images like this:
-// import emailIcon from "../assets/email.png";
-// import githubIcon from "../assets/github.png";
-// import linkedinIcon from "../assets/linkedin.png";
+import emailIcon from "/assets/email.png";
+import githubIcon from "/assets/github.png";
+import linkedinIcon from "/assets/linkedin.png";
 
 const ContactMe = () => (
   <section className="contact-container" aria-label="Contact section">
@@ -15,19 +13,19 @@ const ContactMe = () => (
     <div className="contact-content">
       <div className="socials-container">
         <ContactinfoCard
-          iconUrl="./assets/email.png"
+          iconUrl={emailIcon}
           text="mvulakolweni08@gmail.com"
           link="mailto:mvulakolweni08@gmail.com"
           alt="Email icon"
         />
         <ContactinfoCard
-          iconUrl="./assets/github.png"
+          iconUrl={githubIcon}
           text="GitHub"
           link="https://github.com/mvula-github"
           alt="GitHub icon"
         />
         <ContactinfoCard
-          iconUrl="./assets/linkedin.png"
+          iconUrl={linkedinIcon}
           text="LinkedIn"
           link="https://www.linkedin.com/in/mvula"
           alt="LinkedIn icon"

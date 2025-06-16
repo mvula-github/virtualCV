@@ -1,18 +1,18 @@
 export const SKILLS = [
   {
     title: "Frontend",
-    icon: "./assets/monitor.png",
+    icon: "/assets/monitor.png",
     skills: [
       { skill: "HTML", percentage: "72%" },
-      { skill: "css", percentage: "79%" },
-      { skill: "Javascript", percentage: "77%" },
+      { skill: "CSS", percentage: "79%" },
+      { skill: "JavaScript", percentage: "77%" },
       { skill: "React.js", percentage: "80% " },
       { skill: "Figma", percentage: "60%" },
     ],
   },
   {
     title: "Backend",
-    icon: "./assets/backend.png",
+    icon: "../../public/assets/backend.png",
     skills: [
       { skill: "C/C++", percentage: "70%" },
       { skill: "C#", percentage: "85%" },
@@ -24,27 +24,28 @@ export const SKILLS = [
   },
   {
     title: "Tools",
-    icon: "./assets/technical-support.png",
+    icon: "../../public/assets/technical-support.png",
     skills: [
-      { skill: "VS Code", percentage: "75%" },
-      { skill: "Visual Studio", percentage: "77%" },
-      { skill: "Git and Github", percentage: "73%" },
+      { skill: "VS Code", percentage: "87%" },
+      { skill: "Visual Studio", percentage: "85%" },
+      { skill: "Git and Github", percentage: "85%" },
       { skill: "Cisco (Packet Tracer)", percentage: "58%" },
-      { skill: "Microsoft Office", percentage: "83%" },
-      { skill: "Google Chrome", percentage: "90%" },
+      { skill: "Microsoft Office", percentage: "87%" },
+      { skill: "Google Chrome", percentage: "95%" },
     ],
   },
 
   {
     title: "Soft Skills",
-    icon: "./assets/doctor.png",
+    icon: "../../public/assets/doctor.png",
     skills: [
-      { skill: "Communication", percentage: "82%" },
+      { skill: "Communication", percentage: "85%" },
       { skill: "Attentive", percentage: "89%" },
-      { skill: "Problem-solving", percentage: "80%" },
-      { skill: "Teamwork", percentage: "82%" },
-      { skill: "Punctual", percentage: "95%" },
-      { skill: "Analytical", percentage: "88%" },
+      { skill: "Problem-solving", percentage: "92%" },
+      { skill: "Teamwork", percentage: "87%" },
+      { skill: "Punctual", percentage: "90%" },
+      { skill: "Analytical", percentage: "90%" },
+      { skill: "Creative", percentage: "90%" },
     ],
   },
 ];
@@ -67,6 +68,14 @@ export const WORK_XP = [
     duties: [
       "Evaluated and graded formal tests and assignments with attention to detail and consistency.",
       "Provided academic support by simplifying complex data structure concepts for students.",
+    ],
+  },
+  {
+    employer: "North West University",
+    title: "Student Assistant - Decision Support Systems",
+    date: "February 2025 - June 2024",
+    duties: [
+      "Evaluated and graded formal tests and assignments with attention to detail and consistency.",
     ],
   },
 ];
