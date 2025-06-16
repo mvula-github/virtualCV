@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./Home.css";
+import myselfImg from "/assets/Me/myself.jpg";
 
 const Home = () => {
   return (
@@ -33,7 +34,7 @@ const Home = () => {
         <div>
           <img
             className="Me"
-            src="./assets/Me/myself.jpg"
+            src={myselfImg}
             alt="Portrait of Mvula Kolweni"
             loading="lazy"
           />
