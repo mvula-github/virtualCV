@@ -4,33 +4,40 @@ import "./ContactMe.css";
 import ContactinfoCard from "./ContactInfoCard/ContactinfoCard";
 import ContactForm from "./ContactForm/ContactForm";
 
-const ContactMe = () => {
-  return (
-    <section className="contact-container">
-      <h5>Contact Me</h5>
+// If using a bundler, import images like this:
+// import emailIcon from "../assets/email.png";
+// import githubIcon from "../assets/github.png";
+// import linkedinIcon from "../assets/linkedin.png";
 
-      <div className="contact-content">
-        <div className="socials-container">
-          <a href="mvulakolwen08@gmail.com" target="blank">
-            <ContactinfoCard
-              iconUrl="./assets/email.png"
-              text="Email: mvulakolwen08@gmail.com"
-            />
-          </a>
-          <a href="https://github.com/mvula-github" target="blank">
-            <ContactinfoCard iconUrl="./assets/github.png" text="GitHub" />
-          </a>
-          <a href="https://www.linkedin.com/in/mvula" target="blank">
-            <ContactinfoCard iconUrl="./assets/linkedin.png" text="LinkedIn" />
-          </a>
-        </div>
-
-        <div className="contact-form-container">
-          <ContactForm />
-        </div>
+const ContactMe = () => (
+  <section className="contact-container" aria-label="Contact section">
+    <h2>Contact Me</h2>
+    <div className="contact-content">
+      <div className="socials-container">
+        <ContactinfoCard
+          iconUrl="./assets/email.png"
+          text="mvulakolweni08@gmail.com"
+          link="mailto:mvulakolweni08@gmail.com"
+          alt="Email icon"
+        />
+        <ContactinfoCard
+          iconUrl="./assets/github.png"
+          text="GitHub"
+          link="https://github.com/mvula-github"
+          alt="GitHub icon"
+        />
+        <ContactinfoCard
+          iconUrl="./assets/linkedin.png"
+          text="LinkedIn"
+          link="https://www.linkedin.com/in/mvula"
+          alt="LinkedIn icon"
+        />
       </div>
-    </section>
-  );
-};
+      <div className="contact-form-container">
+        <ContactForm />
+      </div>
+    </div>
+  </section>
+);
 
 export default ContactMe;
